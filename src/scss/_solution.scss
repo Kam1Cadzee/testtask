@@ -3,11 +3,23 @@
   margin-bottom: 50px;
   &__title {
     margin-bottom: 40px;
+
+    @include media($b-lg) {
+      font-size: 32px;
+    }
+
+    @include media($b-sm) {
+      font-size: 24px;
+    }
   }
   &__text {
     max-width: 750px;
     margin: auto;
     margin-bottom: 80px;
+    @include media($b-sm) {
+      font-size: 12px;
+      line-height: 18px;
+    }
   }
 }
 
@@ -16,29 +28,55 @@
   @include media($b-xl) {
     justify-content: center;
   }
+
   &__item {
     @include col;
     @include make-col(4);
 
-    @include media($b-xl) {
-      @include make-col(6);
-    }
     @include media($b-md) {
       @include make-col(12);
+      margin-bottom: 50px;
     }
   }
 
+  &__img {
+
+    img {
+      max-width: 100%;
+      @include media($b-lg) {
+        width: 200px;
+
+        height: 150px;
+        object-fit: cover;
+        max-width: none;
+
+      }
+    }
+  }
   &__title {
     position: relative;
+
+    @include media($b-md) {
+      position: initial;
+    }
+
     &::after {
       content: url('../img/Shape_6.png');
       position: absolute;
       top: 3px;
       right: -38px;
 
+      @include media($b-lg) {
+        content: url('../img/arrow-md.png');
+        right: -30px;
+      }
+      @include media($b-md) {
+        transform: rotate(90deg);
+        left: 0;
+        top: initial;
+        right: 0;
+        bottom: -30px;
 
-      @include media($b-xl) {
-        content: '';
       }
     }
   }
@@ -55,7 +93,11 @@
 }
 .qoute {
   padding: 40px 0;
-  background-image: linear-gradient(to right, #19256b 0%, #1a256b 32%, #da5716 73%, #da5413 100%);
+
+  @include media($b-sm) {
+    padding: 60px 25px;
+  }
+  background-image: linear-gradient(-237deg, #19256b 0%, #da5413 100%);
 
   color: #ffffff;
   font-family: $font-lato;

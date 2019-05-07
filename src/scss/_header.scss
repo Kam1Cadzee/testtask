@@ -4,6 +4,9 @@
   &__row {
     justify-content: space-between;
 
+    @include media($b-md) {
+      justify-content: center;
+    }
   }
 
   &__button {
@@ -21,5 +24,11 @@
       color: #dc2400;
       border-color: #dc2400;
     }
+  }
+}
+
+.logo {
+  @include media($b-md) {
+    display: none;
   }
 }
