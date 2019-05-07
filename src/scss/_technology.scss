@@ -10,9 +10,28 @@
   }
   &__item {
     padding: 40px 0;
+
+    @include media($b-md) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     img {
       float: right;
       padding-left: 20px;
+
+      @include media($b-xl) {
+        max-width: 600px;
+      }
+      @include media($b-lg) {
+        max-width: 450px;
+      }
+      @include media($b-md) {
+        float: none;
+        padding: 0;
+        max-width: 100%;
+      }
     }
   }
 }

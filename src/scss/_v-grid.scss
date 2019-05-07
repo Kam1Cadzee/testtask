@@ -3,8 +3,8 @@ $mobile-first: false !default;
 
 $b-xs: 360px;
 $b-sm: 500px;
-$b-md: 650px;
-$b-lg: 890px;
+$b-md: 770px;
+$b-lg: 960px;
 $b-xl: 1130px;
 
 
@@ -44,7 +44,7 @@ $grid-gutter-width: 30px;
     width: 80%;
   }
   @else {
-    width: $width;
+    max-width: $width;
   }
 
   padding-right: ($grid-gutter-width / 2);

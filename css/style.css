@@ -52,12 +52,22 @@
     margin: auto;
     margin-bottom: 80px; }
 
+@media screen and (max-width: 1130px) {
+  .solutions {
+    justify-content: center; } }
+
 .solutions__item {
   position: relative;
   margin-right: 15px;
   margin-left: 15px;
   box-sizing: border-box;
   flex: 0 0 calc(100% / 12 * 4 - 30px); }
+  @media screen and (max-width: 1130px) {
+    .solutions__item {
+      flex: 0 0 calc(100% / 12 * 6 - 30px); } }
+  @media screen and (max-width: 770px) {
+    .solutions__item {
+      flex: 0 0 calc(100% / 12 * 12 - 30px); } }
 
 .solutions__title {
   position: relative; }
@@ -66,12 +76,16 @@
     position: absolute;
     top: 3px;
     right: -38px; }
+    @media screen and (max-width: 1130px) {
+      .solutions__title::after {
+        content: ''; } }
 
 .solutions__desc {
   padding: 0px 20px; }
 
 .wrp {
   max-width: 600px;
+  padding: 0px 20px;
   margin: auto; }
 
 .qoute {
@@ -84,7 +98,8 @@
   line-height: 30px;
   text-align: center; }
   .qoute blockquote {
-    margin: 0; }
+    margin: 0;
+    margin-bottom: 10px; }
   .qoute p {
     font-size: 14px;
     margin: 0;
@@ -101,9 +116,25 @@
     margin: 0; }
   .technology__item {
     padding: 40px 0; }
+    @media screen and (max-width: 770px) {
+      .technology__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
     .technology__item img {
       float: right;
       padding-left: 20px; }
+      @media screen and (max-width: 1130px) {
+        .technology__item img {
+          max-width: 600px; } }
+      @media screen and (max-width: 960px) {
+        .technology__item img {
+          max-width: 450px; } }
+      @media screen and (max-width: 770px) {
+        .technology__item img {
+          float: none;
+          padding: 0;
+          max-width: 100%; } }
 
 .left img {
   float: left;
@@ -111,11 +142,14 @@
   padding-right: 20px; }
 
 .container {
-  width: 1040px;
+  max-width: 1040px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
+  @media screen and (max-width: 1130px) {
+    .container {
+      max-width: 90%; } }
 
 .row {
   display: flex;

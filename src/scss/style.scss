@@ -9,6 +9,11 @@
 
 .container {
   @include container(1040px);
+
+  @include media($b-xl) {
+    max-width: 90%;
+  }
+
 }
 .row {
   @include row;
