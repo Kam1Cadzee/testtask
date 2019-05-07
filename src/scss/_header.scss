@@ -1,0 +1,25 @@
+.header {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  &__row {
+    justify-content: space-between;
+
+  }
+
+  &__button {
+    text-decoration: none;
+    border-radius: 21px;
+    border: 1px solid #28225e;
+    color: #28225e;
+    font-family: $font-lato;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.45px;
+    padding: 10px 20px;
+
+    &:hover {
+      color: #dc2400;
+      border-color: #dc2400;
+    }
+  }
+}

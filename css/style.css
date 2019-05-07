@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+.title {
+  color: #1f1f1f;
+  font-family: Lato, sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.87px;
+  letter-spacing: 0.9px; }
+
+.subtitle {
+  color: #1f1f1f;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  font-size: 20px;
+  letter-spacing: 0.5px; }
+
+.text {
+  color: #1f1f1f;
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.35px; }
+
+.header {
+  margin-top: 20px;
+  margin-bottom: 50px; }
+  .header__row {
+    justify-content: space-between; }
+  .header__button {
+    text-decoration: none;
+    border-radius: 21px;
+    border: 1px solid #28225e;
+    color: #28225e;
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.45px;
+    padding: 10px 20px; }
+    .header__button:hover {
+      color: #dc2400;
+      border-color: #dc2400; }
+
+.solution {
+  text-align: center;
+  margin-bottom: 50px; }
+  .solution__title {
+    margin-bottom: 40px; }
+  .solution__text {
+    max-width: 750px;
+    margin: auto;
+    margin-bottom: 80px; }
+
+.solutions__item {
+  position: relative;
+  margin-right: 15px;
+  margin-left: 15px;
+  box-sizing: border-box;
+  flex: 0 0 calc(100% / 12 * 4 - 30px); }
+
+.solutions__title {
+  position: relative; }
+  .solutions__title::after {
+    content: url("../img/Shape_6.png");
+    position: absolute;
+    top: 3px;
+    right: -38px; }
+
+.solutions__desc {
+  padding: 0px 20px; }
+
+.wrp {
+  max-width: 600px;
+  margin: auto; }
+
+.qoute {
+  padding: 40px 0;
+  background-image: linear-gradient(to right, #19256b 0%, #1a256b 32%, #da5716 73%, #da5413 100%);
+  color: #ffffff;
+  font-family: Lato, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center; }
+  .qoute blockquote {
+    margin: 0; }
+  .qoute p {
+    font-size: 14px;
+    margin: 0;
+    text-align: right; }
+
+.without-arrow::after {
+  content: ''; }
+
+.technology {
+  padding: 100px 0; }
+  .technology__title {
+    text-align: center; }
+  .technology__subtitle {
+    margin: 0; }
+  .technology__item {
+    padding: 40px 0; }
+    .technology__item img {
+      float: right;
+      padding-left: 20px; }
+
+.left img {
+  float: left;
+  padding-left: 0;
+  padding-right: 20px; }
+
+.container {
+  width: 1040px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }

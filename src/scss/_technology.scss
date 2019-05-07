@@ -1,0 +1,26 @@
+.technology {
+  padding: 100px 0;
+  &__title {
+    text-align: center;
+  }
+
+
+  &__subtitle {
+    margin: 0;
+  }
+  &__item {
+    padding: 40px 0;
+    img {
+      float: right;
+      padding-left: 20px;
+    }
+  }
+}
+
+.left {
+  img {
+    float: left;
+    padding-left: 0;
+    padding-right: 20px;
+  }
+}

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700');
+@import "variables";
+@import "v-grid";
+@import "text";
+@import "header";
+@import "solution";
+@import "technology";
+
+
+.container {
+  @include container(1040px);
+}
+.row {
+  @include row;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

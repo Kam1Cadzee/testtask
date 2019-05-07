@@ -1,0 +1,65 @@
+.solution {
+  text-align: center;
+  margin-bottom: 50px;
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__text {
+    max-width: 750px;
+    margin: auto;
+    margin-bottom: 80px;
+  }
+}
+
+.solutions {
+
+  &__item {
+    @include col;
+    @include make-col(4);
+  }
+
+  &__title {
+    position: relative;
+    &::after {
+      content: url('../img/Shape_6.png');
+      position: absolute;
+      top: 3px;
+      right: -38px;
+
+    }
+  }
+
+  &__desc {
+    padding: 0px 20px;
+  }
+}
+
+.wrp {
+  max-width: 600px;
+  margin: auto;
+}
+.qoute {
+  padding: 40px 0;
+  background-image: linear-gradient(to right, #19256b 0%, #1a256b 32%, #da5716 73%, #da5413 100%);
+
+  color: #ffffff;
+  font-family: $font-lato;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+
+  blockquote {
+    margin: 0;
+  }
+  p {
+    font-size: 14px;
+    margin: 0;
+    text-align: right;
+  }
+}
+.without-arrow {
+  &::after {
+    content: '';
+  }
+}
